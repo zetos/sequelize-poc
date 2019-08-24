@@ -36,5 +36,5 @@ postgres=> exit
 
 ## Requiriments
 
-sequelize-cli
+sequelize-cli  
 PostgreSQL
