@@ -4,7 +4,10 @@ module.exports = (sequelize, DataTypes) => {
     class_name: DataTypes.STRING
   }, {});
   Classroom.associate = function(models) {
-    // associations can be defined here
+    Classroom.hasMany(models.Student, {
+      foreignKey: 'classroom_id',
+      as: 'students',
+    });
   };
   return Classroom;
 };
